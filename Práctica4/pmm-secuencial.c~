@@ -1,0 +1,50 @@
+// gcc figura1-modificado.c -o figura1-modificado
+// gcc -O1 figura1-modificado.c -o figura1-modificado
+// gcc -O2 figura1-modificado.c -o figura1-modificado
+// gcc -O3 figura1-modificado.c -o figura1-modificado
+// gcc -Os figura1-modificado.c -o figura1-modificado
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+struct {
+        int a;
+        int b;
+}  s[5000];
+
+int main(int argc, char **argv){
+	clock_t start, stop;
+	int X1, X2;
+	int * R;
+	R = (int*)malloc(40000*sizeof(int));
+	
+	//Inicialización de valores
+	for(int i=0; i<5000; i++){
+		s[i].a = i;
+		s[i].b = i;
+	}
+
+	start = clock();
+
+/* ------------CUERPO DEL PROGRAMA----------  */
+
+   for (int ii=0; ii<=40000;ii++) {
+      for(int i=0; i<5000;i++)  X1+=2*s[i].a+ii; //Sumatoria en X1, siempre mayor
+      for(int i=0; i<5000;i++)  X2+=3*s[i].b-ii; //Sumatoria en X2, siempre menor
+
+      if (X1<X2)  R[ii]=X1;  else  R[ii]=X2;
+   }
+
+/* ------------------------------------------ */
+
+
+
+stop = clock();
+printf("\nTiempo= %f \n", difftime(stop,start));
+printf("\nR[0]=%d R[%d]=%d",R[0],ii,R[ii]);
+
+return 0;
+
+}

@@ -1,0 +1,30 @@
+export OMP_NUM_THREADS=4
+echo 'Practicas2/secuencial 10' | qsub -q ac
+sleep 1
+export OMP_NUM_THREADS=4
+echo 'Practicas2/secuencial 1000' | qsub -q ac
+sleep 1
+export OMP_NUM_THREADS=4
+echo 'Practicas2/secuencial 10000' | qsub -q ac
+
+sleep 5
+
+export OMP_NUM_THREADS=4
+echo 'Practicas2/paralelo1 10' | qsub -q ac
+sleep 1
+export OMP_NUM_THREADS=4
+echo 'Practicas2/paralelo1 1000' | qsub -q ac
+sleep 1
+export OMP_NUM_THREADS=4
+echo 'Practicas2/paralelo1 10000' | qsub -q ac
+
+sleep 5
+
+export OMP_NUM_THREADS=4
+echo 'Practicas2/paralelo2 10' | qsub -q ac
+sleep 1
+export OMP_NUM_THREADS=4
+echo 'Practicas2/paralelo2 1000' | qsub -q ac
+sleep 1
+export OMP_NUM_THREADS=4
+echo 'Practicas2/paralelo2 10000' | qsub -q ac

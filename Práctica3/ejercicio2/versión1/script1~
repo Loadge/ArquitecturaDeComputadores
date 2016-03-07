@@ -1,0 +1,22 @@
+./schedule-clause_1 1
+sleep 1
+./schedule-clause_1 2
+sleep 1
+./schedule-clause_1 4
+
+sleep 5
+
+./scheduled-clause_1 1
+sleep 1
+./scheduled-clause_1 2
+sleep 1
+./scheduled-clause_1 4
+
+sleep 5
+
+./scheduleg-clause_1 1
+sleep 1
+./scheduleg-clause_1 2
+sleep 1
+./scheduleg-clause_1 4
+

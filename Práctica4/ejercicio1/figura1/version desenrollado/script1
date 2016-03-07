@@ -1,0 +1,5 @@
+gcc figura1-modificado_desen.c -o figura1-modificado_desen-0 -lrt
+gcc -O1 figura1-modificado_desen.c -o figura1-modificado_desen-1 -lrt
+gcc -O2 figura1-modificado_desen.c -o figura1-modificado_desen-2 -lrt
+gcc -O3 figura1-modificado_desen.c -o figura1-modificado_desen-3 -lrt
+gcc -Os figura1-modificado_desen.c -o figura1-modificado_desen-4 -lrt

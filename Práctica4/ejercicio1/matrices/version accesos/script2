@@ -1,0 +1,11 @@
+echo "---------------------O0--------------------------------"
+./pmm-secuencial-modificado_accesos-0
+echo "---------------------O1--------------------------------"
+./pmm-secuencial-modificado_accesos-1
+echo "---------------------O2--------------------------------"
+./pmm-secuencial-modificado_accesos-2
+echo "---------------------O3--------------------------------"
+./pmm-secuencial-modificado_accesos-3
+echo "---------------------Os--------------------------------"
+./pmm-secuencial-modificado_accesos-4
+echo "-------------------------------------------------------"

@@ -1,0 +1,25 @@
+#!/bin/bash
+#Se asigna al trabajo el nombre helloopm
+#PBS -N HelloOMP
+#Se asigna el trabajo a la cola ac
+#PBS -q ac
+#Se imprime información:
+
+echo "Variable WORKDIR:" $PBS_O_WORKDIR
+echo "ID Usuario: $PBS_O_LOGNAME"
+echo "ID Trabajo: $PBS_JOBID"
+echo "Nombre del trabajo especificado por el usuario: $PBS_JOBNAME"
+echo "Nodo que ejecuta qsub: $PBS_O_HOST"
+echo "Cola: $PBS_QUEUE"
+echo "Nodos asignados al trabajo: "
+cat $PBS_NODEFILE
+
+#Se fija a 12 el nº de threads máximo (tantos como cores en un nodo)
+export OMP_THREAD_LIMIT=12
+echo "Nº de threads inicial: $OMP_THREAD_LIMIT"
+#Se ejecuta el trabajo, que está en el directorio en el que se ha ejecutado qsub
+for ((P=OMP_THREAD_LIMIT ; P>0 ; P=P/2 )) do
+  export OMP_NUM_THREADS=$P
+  echo -e "\nPara $OMP_NUM_THREADS threads:"
+  ./HelloOMP
+done

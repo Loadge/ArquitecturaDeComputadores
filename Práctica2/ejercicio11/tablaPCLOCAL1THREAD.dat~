@@ -1,0 +1,4 @@
+
+Tiempo(seg.):0.000008598	 / Tamaño Matriz:100	/ vSuma[0]=328350 / / vSuma[99]=818400 /
+Tiempo(seg.):0.000833055	 / Tamaño Matriz:1000	/ vSuma[0]=332833500 / / vSuma[999]=831834000 /
+Tiempo(seg.):0.080935913	 / Tamaño Matriz:10000	/ vSuma[0]=-1724114088 / / vSuma[9999]=-40315424 /

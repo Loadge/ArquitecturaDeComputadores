@@ -1,0 +1,5 @@
+gcc pmm-secuencial-modificado_accesos.c -o pmm-secuencial-modificado_accesos-0 -lrt
+gcc -O1 pmm-secuencial-modificado_accesos.c -o pmm-secuencial-modificado_accesos-1 -lrt
+gcc -O2 pmm-secuencial-modificado_accesos.c -o pmm-secuencial-modificado_accesos-2 -lrt
+gcc -O3 pmm-secuencial-modificado_accesos.c -o pmm-secuencial-modificado_accesos-3 -lrt
+gcc -Os pmm-secuencial-modificado_accesos.c -o pmm-secuencial-modificado_accesos-4 -lrt

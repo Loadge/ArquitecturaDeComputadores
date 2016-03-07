@@ -1,0 +1,10 @@
+
+gcc -O2 -fopenmp pmtv-OpenMP.c -o pmtv-OpenMP -lrt
+export OMP_SCHEDULE='static'
+./pmtv-OpenMP 32 4
+sleep 1
+export OMP_SCHEDULE='dynamic'
+./pmtv-OpenMP 32 4
+sleep 1
+export OMP_SCHEDULE='guided'
+./pmtv-OpenMP 32 4

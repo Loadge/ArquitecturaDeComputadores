@@ -1,0 +1,24 @@
+echo "Con static-------------------------------"
+./pmm-OpenMP 12000 1 -1
+./pmm-OpenMP 12000 1 2
+./pmm-OpenMP 12000 1 32
+./pmm-OpenMP 12000 1 64
+./pmm-OpenMP 12000 1 2048
+
+sleep 1
+
+echo "Con dynamic-------------------------------"
+./pmm-OpenMP 12000 2 -1
+./pmm-OpenMP 12000 2 2
+./pmm-OpenMP 12000 2 32
+./pmm-OpenMP 12000 2 64
+./pmm-OpenMP 12000 2 2048
+
+sleep 1
+
+echo "Con guided-------------------------------"
+./pmm-OpenMP 12000 3 -1
+./pmm-OpenMP 12000 3 2
+./pmm-OpenMP 12000 3 32
+./pmm-OpenMP 12000 3 64
+./pmm-OpenMP 12000 3 2048

@@ -1,0 +1,78 @@
+echo "Con static-------------------------------"
+./pmm-OpenMP_ej10 100 1 -1 1
+./pmm-OpenMP_ej10 1000 1 -1 1
+./pmm-OpenMP_ej10 1500 1 -1 1
+
+./pmm-OpenMP_ej10 100 1 -1 2
+./pmm-OpenMP_ej10 1000 1 -1 2
+./pmm-OpenMP_ej10 1500 1 -1 2
+
+./pmm-OpenMP_ej10 100 1 -1 4
+./pmm-OpenMP_ej10 1000 1 -1 4
+./pmm-OpenMP_ej10 1500 1 -1 4
+
+./pmm-OpenMP_ej10 100 1 -1 6
+./pmm-OpenMP_ej10 1000 1 -1 6
+./pmm-OpenMP_ej10 1500 1 -1 6
+
+./pmm-OpenMP_ej10 100 1 -1 8
+./pmm-OpenMP_ej10 1000 1 -1 8
+./pmm-OpenMP_ej10 1500 1 -1 8
+
+./pmm-OpenMP_ej10 100 1 -1 12
+./pmm-OpenMP_ej10 1000 1 -1 12
+./pmm-OpenMP_ej10 1500 1 -1 12
+
+sleep 1
+
+echo "Con dynamic-------------------------------"
+./pmm-OpenMP_ej10 100 2 -1 1
+./pmm-OpenMP_ej10 1000 2 -1 1
+./pmm-OpenMP_ej10 1500 2 -1 1
+
+./pmm-OpenMP_ej10 100 2 -1 2
+./pmm-OpenMP_ej10 1000 2 -1 2
+./pmm-OpenMP_ej10 1500 2 -1 2
+
+./pmm-OpenMP_ej10 100 2 -1 4
+./pmm-OpenMP_ej10 1000 2 -1 4
+./pmm-OpenMP_ej10 1500 2 -1 4
+
+./pmm-OpenMP_ej10 100 2 -1 6
+./pmm-OpenMP_ej10 1000 2 -1 6
+./pmm-OpenMP_ej10 1500 2 -1 6
+
+./pmm-OpenMP_ej10 100 2 -1 8
+./pmm-OpenMP_ej10 1000 2 -1 8
+./pmm-OpenMP_ej10 1500 2 -1 8
+
+./pmm-OpenMP_ej10 100 2 -1 12
+./pmm-OpenMP_ej10 1000 2 -1 12
+./pmm-OpenMP_ej10 1500 2 -1 12
+
+sleep 1
+
+echo "Con guided-------------------------------"
+./pmm-OpenMP_ej10 100 3 -1 1
+./pmm-OpenMP_ej10 1000 3 -1 1
+./pmm-OpenMP_ej10 1500 3 -1 1
+
+./pmm-OpenMP_ej10 100 3 -1 2
+./pmm-OpenMP_ej10 1000 3 -1 2
+./pmm-OpenMP_ej10 1500 3 -1 2
+
+./pmm-OpenMP_ej10 100 3 -1 4
+./pmm-OpenMP_ej10 1000 3 -1 4
+./pmm-OpenMP_ej10 1500 3 -1 4
+
+./pmm-OpenMP_ej10 100 3 -1 6
+./pmm-OpenMP_ej10 1000 3 -1 6
+./pmm-OpenMP_ej10 1500 3 -1 6
+
+./pmm-OpenMP_ej10 100 3 -1 8
+./pmm-OpenMP_ej10 1000 3 -1 8
+./pmm-OpenMP_ej10 1500 3 -1 8
+
+./pmm-OpenMP_ej10 100 3 -1 12
+./pmm-OpenMP_ej10 1000 3 -1 12
+./pmm-OpenMP_ej10 1500 3 -1 12

@@ -1,0 +1,33 @@
+echo 'Practicas3/pmm-OpenMP 12000 1 -1' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 1 2' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 1 32' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 1 64' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 1 2048' | qsub -q ac
+
+sleep 5
+
+echo 'Practicas3/pmm-OpenMP 12000 2 -1' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 2 2' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 2 32' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 2 64' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 2 2048' | qsub -q ac
+
+sleep 5
+
+echo 'Practicas3/pmm-OpenMP 12000 3 -1' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 3 2' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 3 32' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 3 64' | qsub -q ac
+sleep 1
+echo 'Practicas3/pmm-OpenMP 12000 3 2048' | qsub -q ac

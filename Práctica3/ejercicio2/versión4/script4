@@ -1,0 +1,24 @@
+./schedule-clause_4 1
+sleep 1
+./schedule-clause_4 2
+sleep 1
+./schedule-clause_4 4
+
+sleep 5
+echo ----------------------------------
+
+./scheduled-clause_4 1
+sleep 1
+./scheduled-clause_4 2
+sleep 1
+./scheduled-clause_4 4
+
+sleep 5
+echo ----------------------------------
+
+./scheduleg-clause_4 1
+sleep 1
+./scheduleg-clause_4 2
+sleep 1
+./scheduleg-clause_4 4
+

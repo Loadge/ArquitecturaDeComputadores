@@ -1,0 +1,5 @@
+gcc -O2 -fopenmp pmm-OpenMP_1.c -o pmm-OpenMP_1 -lrt
+gcc -O2 -fopenmp pmm-OpenMP_2.c -o pmm-OpenMP_2 -lrt
+gcc -O2 -fopenmp pmm-OpenMP_4.c -o pmm-OpenMP_4 -lrt
+gcc -O2 -fopenmp pmm-OpenMP_8.c -o pmm-OpenMP_8 -lrt
+gcc -O2 -fopenmp pmm-OpenMP_12.c -o pmm-OpenMP_12 -lrt

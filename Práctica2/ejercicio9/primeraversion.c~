@@ -1,0 +1,72 @@
+// gcc -O2 secuencial.c -o secuencial -lrt
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(int argc, char **argv){
+	int n;
+	int i,j;
+	struct timespec cgt1,cgt2; double ncgt;
+		
+	if(argc <2){
+		fprintf(stderr, "Falta el tamaño de la matriz cuadrada\n");
+		exit(-1);
+	}
+	n = atoi(argv[1]);
+
+	int **matriz;
+	int *vector;
+	int *vSuma;
+	//Creación de vectores
+	#pragma omp parallel
+	{
+		#pragma omp single
+		{
+			vector = (int*) malloc(n*sizeof(int));
+			vSuma  = (int*) malloc(n*sizeof(int));
+			//Creación de matriz
+			matriz = (int**) malloc(n*sizeof(int*));
+		}
+		#pragma omp for
+		for(i=0; i<n;i++){matriz[i]=(int*) malloc(n*sizeof(int));}
+		
+		//Inicialización
+		#pragma omp for
+		for(i=0;i<n;i++){
+			vector[i]=i;
+			vSuma[i] =i;
+			for(j=0;j<n;j++){
+				matriz[i][j]=i+j;
+			}
+		}
+		#pragma omp single
+		{
+			clock_gettime(CLOCK_REALTIME,&cgt1);
+		}
+		//Operaciones
+		#pragma omp for		
+		for(i=0;i<n;i++){
+			for(j=0;j<n;j++){
+				vSuma[i] += matriz[i][j] * vector[j];
+			}
+		}
+		#pragma omp single
+		{
+			clock_gettime(CLOCK_REALTIME,&cgt2);
+			ncgt=	(double) (cgt2.tv_sec-cgt1.tv_sec)+
+				(double) ((cgt2.tv_nsec-cgt1.tv_nsec)
+				/(1.e+9));
+		}
+	}
+printf("Tiempo(seg.):%11.9f\t / Tamaño Matriz:%u\t/ vSuma[0]=%d / / vSuma[%d]=%d /\n",
+
+		    ncgt,                       n,             vSuma[0],      n-1,
+							 		          vSuma[n-1]);
+
+
+
+	free(vector);
+	free(vSuma);
+	free(matriz);
+}

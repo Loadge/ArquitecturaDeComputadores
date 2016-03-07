@@ -1,0 +1,5 @@
+gcc -O0 figura1-modificado.c -o figura1-modificado-0
+gcc -O1 figura1-modificado.c -o figura1-modificado-1
+gcc -O2 figura1-modificado.c -o figura1-modificado-2
+gcc -O3 figura1-modificado.c -o figura1-modificado-3
+gcc -Os figura1-modificado.c -o figura1-modificado-4

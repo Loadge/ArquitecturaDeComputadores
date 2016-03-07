@@ -1,0 +1,5 @@
+gcc daxpy.c -o daxpy-0 -lrt
+gcc -O1 daxpy.c -o daxpy-1 -lrt
+gcc -O2 daxpy.c -o daxpy-2 -lrt
+gcc -O3 daxpy.c -o daxpy-3 -lrt
+gcc -Os daxpy.c -o daxpy-4 -lrt

@@ -1,0 +1,28 @@
+-----------Variables de control:
+	Se modifican dentro del programa, pero en otro programa distinto tienen su valor por defecto a menos que las modifiquemos.
+
+		nest-var: controla el paralelismo anidado. Parallel dentro parallels...Con esto, podemos controlar las hebras que van a según qué parallel.
+-----------Variables de entorno:
+	Tienen mayor prioridad que las de control.
+
+-----------
+	diap.15:
+		Se puede quitar el nowait. 
+-----------
+	
+	chunk sirve para asignarle iteraciones a cada hebra. Esto puede servir cuando hay dependencia de datos fuerte. Lo mismo demasiadas hebras tiene un mayor coste, pero tampoco nos conviene hacerlo totalmente secuencial. No todo puede ser paralelo en esta vida, pero tampoco totalmente secuencial.
+	pero ojo!. Si nos cuesta más decidir el chunk que el beneficio que nos llevaría, somos retrasados mentales.
+
+-----------
+
+	Kind = guided: el chunk de cada hebra va menguando conforme va acabando el bucle. Al final llega a granularidad 1.
+
+-----------
+
+	Kind = runtime: 
+
+-----------
+
+	En un UMA, todo va guay, es un solo ordenador. Multiprocesador. Se utiliza openmp. OpenMP es bastante potente.
+	En un NUMA, hay varios ordenadores. En la red de comunicaciones, la latencia es grande. Este retardo se puede compensar con poco paralelismo. Se utiliza openMPI. Con MPI hay más carga.
+	Se suelen mezclar los dos, para conseguir el mejor resultado. Repartes el trabajo con MPI entre computadores, y dentro de cada uno de ellos haces el trabajo asignado con OpenMP. Y si encima le metes una GPU con CUDA u otro lenguaje, aquello lo peta.

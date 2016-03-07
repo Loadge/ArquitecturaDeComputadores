@@ -1,0 +1,30 @@
+#!/bin/csh -vx
+
+
+echo ""> tablaPCLOCAL8THREADsec.dat
+@ i = 0
+while ( $i < 1200)
+	echo " $i `./secuencial $i`" >> tablaPCLOCAL8THREADsec.dat
+@ i += 100
+end
+
+echo ""> tablaPCLOCAL8THREADpara1.dat
+@ i = 0
+while ( $i < 1200)
+	echo " $i `./paralelo1 $i`" >> tablaPCLOCAL8THREADpara1.dat
+@ i += 100
+end
+
+echo ""> tablaPCLOCAL8THREADpara2.dat
+@ i = 0
+while ( $i < 1200)
+	echo " $i `./paralelo2 $i`" >> tablaPCLOCAL8THREADpara2.dat
+@ i += 100
+end
+
+echo ""> tablaPCLOCAL8THREADpara3.dat
+@ i = 0
+while ( $i < 1200)
+	echo " $i `./paralelo3 $i`" >> tablaPCLOCAL8THREADpara3.dat
+@ i += 100
+end

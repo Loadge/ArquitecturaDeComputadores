@@ -1,0 +1,16 @@
+#!/bin/csh -vx
+
+echo ""> tabla1.dat
+
+echo "`./SumaVectoresCdinamicosOMPsections 65536`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 131072`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 262144`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 524288`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 1048576`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 2097152`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 4194304`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 8388608`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 16777216`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 33554432`" >> tabla1.dat
+echo "`./SumaVectoresCdinamicosOMPsections 67108864`" >> tabla1.dat
+

@@ -1,0 +1,6 @@
+El carácter de la región paralela se modifica antes de la ejecución del programa, con export OMP_DYNAMIC=""
+El primer parámetro es el chunk.
+El nº de hebras se modifica por el segundo parámetro
+El nº máximo de hebras no se puede modificar
+
+En nuestro caso, run-scched-var == dyn-var porque nuestra región paralela es un único bucle.

@@ -1,0 +1,39 @@
+echo "Con static-------------------------------"
+export OMP_SCHEDULE='static'
+./pmtv-OpenMP 30000
+export OMP_SCHEDULE='static'
+./pmtv-OpenMP 30000 2
+export OMP_SCHEDULE='static'
+./pmtv-OpenMP 30000 64
+export OMP_SCHEDULE='static'
+./pmtv-OpenMP 30000 128
+export OMP_SCHEDULE='static'
+./pmtv-OpenMP 30000 1024
+
+sleep 1
+
+echo "Con dynamic-------------------------------"
+export OMP_SCHEDULE='dynamic'
+./pmtv-OpenMP 30000
+export OMP_SCHEDULE='dynamic'
+./pmtv-OpenMP 30000 2
+export OMP_SCHEDULE='dynamic'
+./pmtv-OpenMP 30000 64
+export OMP_SCHEDULE='dynamic'
+./pmtv-OpenMP 30000 128
+export OMP_SCHEDULE='dynamic'
+./pmtv-OpenMP 30000 1024
+
+sleep 1
+
+echo "Con guided-------------------------------"
+export OMP_SCHEDULE='guided'
+./pmtv-OpenMP 30000
+export OMP_SCHEDULE='guided'
+./pmtv-OpenMP 30000 2
+export OMP_SCHEDULE='guided'
+./pmtv-OpenMP 30000 64
+export OMP_SCHEDULE='guided'
+./pmtv-OpenMP 30000 128
+export OMP_SCHEDULE='guided'
+./pmtv-OpenMP 30000 1024

@@ -1,0 +1,8 @@
+thread 0 ejecuta la iteración 0 del bucle
+thread 6 ejecuta la iteración 6 del bucle
+thread 1 ejecuta la iteración 1 del bucle
+thread 7 ejecuta la iteración 7 del bucle
+thread 3 ejecuta la iteración 3 del bucle
+thread 5 ejecuta la iteración 5 del bucle
+thread 4 ejecuta la iteración 4 del bucle
+thread 2 ejecuta la iteración 2 del bucle

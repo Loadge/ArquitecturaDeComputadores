@@ -1,0 +1,22 @@
+gcc -O2 -fopenmp schedule-clause.c -o schedule-clause
+
+echo "----->Por defecto, con chunk=1, 5 hebras<-----"
+./schedule-clause 1 5
+
+sleep 1
+
+echo "----->Estático, con chunk=2, 2 hebras<-----"
+export OMP_SCHEDULE="static"
+./schedule-clause 2 2
+
+sleep 1
+
+echo "----->Dinámico, con chunk=4, 4 hebras<-----"
+export OMP_SCHEDULE="dynamic"
+./schedule-clause 4 4
+
+sleep 1
+
+echo "----->Guided, con chunk=4, 8 hebras<-----"
+export OMP_SCHEDULE="guided"
+./schedule-clause 4 8

@@ -1,0 +1,40 @@
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 100 2 -1 1' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1000 2 -1 1' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1500 2 -1 1' | qsub -q ac
+sleep 1
+
+echo 'dynamic/pmm-OpenMP_ej10 100 2 -1 2' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1000 2 -1 2' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1500 2 -1 2' | qsub -q ac
+sleep 1
+
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 100 2 -1 4' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1000 2 -1 4' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1500 2 -1 4' | qsub -q ac
+sleep 1
+
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 100 2 -1 6' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1000 2 -1 6' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1500 2 -1 6' | qsub -q ac
+sleep 1
+
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 100 2 -1 8' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1000 2 -1 8' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1500 2 -1 8' | qsub -q ac
+sleep 1
+
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 100 2 -1 12' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1000 2 -1 12' | qsub -q ac
+sleep 1
+echo 'Practicas3/ejercicio10/dynamic/pmm-OpenMP_ej10 1500 2 -1 12' | qsub -q ac

@@ -1,0 +1,40 @@
+echo 'static/pmm-OpenMP_ej10 100 1 -1 1' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1000 1 -1 1' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1500 1 -1 1' | qsub -q ac
+sleep 1
+
+echo 'static/pmm-OpenMP_ej10 100 1 -1 2' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1000 1 -1 2' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1500 1 -1 2' | qsub -q ac
+sleep 1
+
+echo 'static/pmm-OpenMP_ej10 100 1 -1 4' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1000 1 -1 4' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1500 1 -1 4' | qsub -q ac
+sleep 1
+
+echo 'static/pmm-OpenMP_ej10 100 1 -1 6' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1000 1 -1 6' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1500 1 -1 6' | qsub -q ac
+sleep 1
+
+echo 'static/pmm-OpenMP_ej10 100 1 -1 8' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1000 1 -1 8' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1500 1 -1 8' | qsub -q ac
+sleep 1
+
+echo 'static/pmm-OpenMP_ej10 100 1 -1 12' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1000 1 -1 12' | qsub -q ac
+sleep 1
+echo 'static/pmm-OpenMP_ej10 1500 1 -1 12' | qsub -q ac

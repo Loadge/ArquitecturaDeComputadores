@@ -1,0 +1,21 @@
+./secuencial 10
+sleep 1
+./secuencial 1000
+sleep 1
+./secuencial 10000
+
+sleep 5
+
+./paralelo1 10
+sleep 1
+./paralelo1 1000
+sleep 1
+./paralelo1 10000
+
+sleep 5
+
+./paralelo2 10
+sleep 1
+./paralelo2 1000
+sleep 1
+./paralelo2 10000

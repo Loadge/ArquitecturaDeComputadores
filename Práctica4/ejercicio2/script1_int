@@ -1,0 +1,5 @@
+gcc daxpy_enteros.c -o daxpy_enteros-0 -lrt
+gcc -O1 daxpy_enteros.c -o daxpy_enteros-1 -lrt
+gcc -O2 daxpy_enteros.c -o daxpy_enteros-2 -lrt
+gcc -O3 daxpy_enteros.c -o daxpy_enteros-3 -lrt
+gcc -Os daxpy_enteros.c -o daxpy_enteros-4 -lrt

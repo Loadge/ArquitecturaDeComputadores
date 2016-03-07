@@ -1,0 +1,11 @@
+echo "---------------------O0--------------------------------"
+./pmm-secuencial-modificado_desenrollado-0
+echo "---------------------O1--------------------------------"
+./pmm-secuencial-modificado_desenrollado-1
+echo "---------------------O2--------------------------------"
+./pmm-secuencial-modificado_desenrollado-2
+echo "---------------------O3--------------------------------"
+./pmm-secuencial-modificado_desenrollado-3
+echo "---------------------Os--------------------------------"
+./pmm-secuencial-modificado_desenrollado-4
+echo "-------------------------------------------------------"

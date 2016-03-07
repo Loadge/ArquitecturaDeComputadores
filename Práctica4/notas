@@ -1,0 +1,25 @@
+----diap 14: en el caso de la derecha, en la primera reserva de memoria, falta sumarle +63.
+	En el segundo caso, la estructura ocupa ahora una línea completa de caché(56B + 8B), mientras que en el primero están parcialmente completas(56B).
+		-La razón por la que se hace esto es para que cada estructura ocupe una sola línea de caché, para que cuando nos declaremos varios estén siempre en una sola línea por estructura, ya que si no fuera así, se descuadrarían.
+		-Quizás la desventaja es que perdemos 1/8 de espacio de caché...
+
+
+----diap 17: en la izquierda: están almacenados primero los 500 elementos de a y luego los 500 elementos de b. La forma de recorrerlos es la óptima tal y como pone ahí porque si lo hiciéramos de la forma que lo hace la derecha tendríamos un montón de saltos en memoria, y faltas de caché.
+		en la derecha: ababababababababababab.... si se hiciera como lo hace en la izquierda sería aún peor.
+
+----diap 19: trabajar con tamaños de datos uniformes, y cuando hagamos una lectura de un dato se aleje de los almacenamientos.
+
+----diap 23: a la máquina le cuesta menos predecir el resultado de la condición.
+		Movemos un 1 en ecx dependiendo de si las otras 2 operaciones "or" han dado true o false.
+
+----diap 26: setge ebx, una errata. Si es más grande le asigno un 1, sino un 0. Se están eliminando los 2 saltos, es lo importante.
+
+
+desenrollado, escribir las matrices de tal forma que se accedan bien, alineamiento de caché, utilizar variables locales(se meten en la pila y además suelen estar en caché).
+hay que explicar lo que hemos hecho, los cambios.
+
+
+generar los ensambladores con diferentes niveles de optimización y ver lo que sale.
+
+
+para valientes: mejorar el código ensamblador (¿se han eliminado los saltos condicionales...?).

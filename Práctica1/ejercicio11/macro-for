@@ -1,0 +1,16 @@
+#!/bin/csh -vx
+
+echo ""> tabla1.dat
+
+echo "`time ./SumaVectoresCdinamicos 65536`">> tabla1.dat
+
+echo "`time ./SumaVectoresCdinamicos 131072`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 262144`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 524288`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 1048576`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 2097152`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 4194304`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 8388608`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 16777216`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 33554432`" >> tabla1.dat
+echo "`time ./SumaVectoresCdinamicos 67108864`" >> tabla1.dat
